@@ -52,12 +52,19 @@
 		if(!mandara.length){return}
 		var cells = mandara[0].getElementsByTagName("td");
 		if(!cells.length){return}
+		var arr = {};
 		for(var i=0; i<cells.length; i++){
 			var input = cells[i].getElementsByTagName("input");
 			if(!input.length){continue}
-			var name = "mandara_"+i;
-			localStorage.setItem(name , input[0].value);
+			var name = "m_"+i;
+			//localStorage.setItem(name , input[0].value);
+			arr[name] = input[0].value;
 		}
+		var title = document.getElementById("title");
+		if(title==null){return}
+		var title_val = "mandaraList_"+title.value;
+		var data = JSON.stringify(arr)
+		localStorage.setItem(title_val , data);
 	};
 	
 	$$.setDataClear = function(){
