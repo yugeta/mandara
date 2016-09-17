@@ -6,8 +6,19 @@ table{
 	border-collapse:collapse;
 }
 .mandara{
-	width:320px;
+	width:100%;
 	display:inline-block;
+	margin:0 auto;
+}
+
+.contents{
+	width:320px;
+	text-align:center;
+}
+
+#theme{
+	width:100%;
+	margin:4px;
 }
 
 .mandara td{
@@ -17,11 +28,20 @@ table{
 }
 
 
-.mandara .kad{
+.mandara td.kad{
 	background-color:#DDF;
 }
-.mandara .thm{
+.mandara td.thm{
 	background-color:#FDD;
+}
+
+.mandara td.kad input{
+	font-weight:bold;
+	color:blue;
+}
+.mandara td.thm input{
+	font-weight:bold;
+	color:red;
 }
 
 .mandara td input{
@@ -35,7 +55,7 @@ table{
 	text-align:center;
 }
 .control{
-	width:320px;
+	width:100%;
 	text-align:right;
 }
 .control input[type="button"]{
