@@ -1,50 +1,27 @@
-.contents{
-/* 	border:1px solid red; */
+h1{
+	margin:2px;
+	padding:0;
 }
-
-table{
-	border-collapse:collapse;
-}
-.mandara{
-	width:100%;
+#mandara{
+	max-width:320px;
 	display:inline-block;
-	margin:0 auto;
+	line-height:0;
 }
-
-.contents{
-	width:320px;
-	text-align:center;
+#mandara table{
+	border-collapse:collapse;
+	display:inline-block;
+	outline:1px solid black;
 }
-
-#theme{
-	width:100%;
-	margin:4px;
-}
-
-.mandara td{
-	width:32px;
-	height:32px;
+#mandara table td{
+	width:30px;
+	height:30px;
 	border:1px solid #888;
+	padding:0;
+	margin:0;
+	font-size:8px;
+	background-color:white;
 }
-
-
-.mandara td.kad{
-	background-color:#DDF;
-}
-.mandara td.thm{
-	background-color:#FDD;
-}
-
-.mandara td.kad input{
-	font-weight:bold;
-	color:blue;
-}
-.mandara td.thm input{
-	font-weight:bold;
-	color:red;
-}
-
-.mandara td input{
+#mandara table td input{
 	display:inline-block;
 	width:100%;
 	height:100%;
@@ -52,13 +29,36 @@ table{
 	padding:0;
 	border:0;
 	background-color:transparent;
-	text-align:center;
+	text-align:left;
 }
-.control{
-	width:100%;
+
+#mandara table:nth-child(5) td:nth-of-type(5) input{
+	background-color:red;
+	color:white;
+}
+#mandara table:nth-child(1) td:nth-of-type(5),
+#mandara table:nth-child(5) td:nth-of-type(1){background-color:#FAA;}
+#mandara table:nth-child(2) td:nth-of-type(5),
+#mandara table:nth-child(5) td:nth-of-type(2){background-color:#AFA;}
+#mandara table:nth-child(3) td:nth-of-type(5),
+#mandara table:nth-child(5) td:nth-of-type(3){background-color:#AAF;}
+#mandara table:nth-child(4) td:nth-of-type(5),
+#mandara table:nth-child(5) td:nth-of-type(4){background-color:#FFA;}
+#mandara table:nth-child(6) td:nth-of-type(5),
+#mandara table:nth-child(5) td:nth-of-type(6){background-color:#FAF;}
+#mandara table:nth-child(7) td:nth-of-type(5),
+#mandara table:nth-child(5) td:nth-of-type(7){background-color:#AFF;}
+#mandara table:nth-child(8) td:nth-of-type(5),
+#mandara table:nth-child(5) td:nth-of-type(8){background-color:#AAA;}
+#mandara table:nth-child(9) td:nth-of-type(5),
+#mandara table:nth-child(5) td:nth-of-type(9){background-color:#FAA;}
+
+
+#control{
+	width:320px;
 	text-align:right;
 }
-.control input[type="button"]{
+#control input[type="button"]{
 	width:80px;
 	height:40px;
 }
